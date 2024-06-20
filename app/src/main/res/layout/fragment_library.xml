@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/white"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true"
+            android:scrollbars="none"
+             tools:context=".fragment.LibraryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/header"
+                      android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/text"
+                      android:text="Recent"
+                      android:textSize="16sp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"
+                      android:layout_marginStart="5dp"
+                      android:layout_marginTop="5dp" />
+            <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:padding="5dp"
+                                                       android:layout_marginStart="5dp"
+                                                       android:layout_marginTop="5dp"
+                                                       android:background="@android:color/holo_blue_light" />
+            
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/colorDivider"
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/view" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent"
+                      android:id="@+id/header2"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@+id/header"
+                      android:orientation="vertical">
+            
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="History"
+                      android:textColor="@color/black"
+                      android:textSize="18sp"
+                      android:padding="5dp"
+                      android:layout_marginTop="15dp"
+                      android:drawablePadding="20dp"
+                      android:drawableStart="@drawable/icons8_history_24" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Your Videos"
+                      android:layout_marginTop="15dp"
+                      android:textColor="@color/black"
+                      android:textSize="18sp"
+                      android:padding="5dp"
+                      android:drawablePadding="20dp"
+                      android:drawableStart="@drawable/icons8_video_24" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Downloads"
+                      android:textColor="@color/black"
+                      android:layout_marginTop="15dp"
+                      android:textSize="18sp"
+                      android:padding="5dp"
+                      android:drawablePadding="20dp"
+                      android:drawableStart="@drawable/icons8_downloads_24" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:text="Watch Later"
+                      android:textColor="@color/black"
+                      android:textSize="18sp"
+                      android:padding="5dp"
+                      android:drawablePadding="20dp"
+                      android:drawableStart="@drawable/icons8_time_24" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Liked Videos"
+                      android:layout_marginTop="15dp"
+                      android:textColor="@color/black"
+                      android:textSize="18sp"
+                      android:padding="5dp"
+                      android:drawablePadding="20dp"
+                      android:drawableStart="@drawable/icons8_heart_24" />
+            
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@color/colorDivider"
+                  android:layout_marginTop="15dp"
+                  android:id="@+id/View" />
+
+
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/header2"
+                        android:id="@+id/center">
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Playlist"
+                      android:textSize="16sp"
+                      android:textColor="@color/black"
+                      android:padding="5dp"
+                      android:id="@+id/text2"
+                      android:layout_marginStart="5dp"
+                      android:layout_marginTop="5dp" />
+
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="New Playlist"
+                      android:textSize="16sp"
+                      android:textColor="#2242EF"
+                      android:layout_alignParentEnd="true"
+                      android:padding="5dp"
+                      android:id="@+id/text3"
+                      android:layout_marginStart="5dp"
+                      android:layout_marginTop="5dp" />
+
+            <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+                                                       android:layout_height="wrap_content"
+                                                       android:layout_below="@id/text2"
+                                                       android:padding="5dp"
+                                                       android:layout_marginStart="5dp"
+                                                       android:id="@+id/playlist_recyclerView" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

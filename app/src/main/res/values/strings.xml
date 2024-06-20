@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Youtube Clone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">357586210851-5ulcn1odnhbbke0e0rq8n2e0rs733lvi.apps.googleusercontent.com
+    </string>  <!--1900075-->
+</resources>
